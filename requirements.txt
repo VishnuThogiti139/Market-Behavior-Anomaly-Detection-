@@ -1,0 +1,4 @@
+pandas              #Used for data manipulation and analysis (loading, filtering, rolling averages, etc.)
+matplotlib          #Used to generate the anomaly charts (line plot, volume overlay, arrows)
+yfinance            #Fetches historical stock data from Yahoo Finance via API
+streamlit           #Builds the interactive web app (input form, chart display, table, download button)
