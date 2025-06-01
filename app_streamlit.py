@@ -4,6 +4,7 @@ from analyzer import detect_anomalies
 from visualizer import plot_anomalies
 import pandas as pd
 import os
+import yfinance as yf
 
 st.set_page_config(layout="wide")
 st.title("📈 Market Behavior Anomaly Detection")
