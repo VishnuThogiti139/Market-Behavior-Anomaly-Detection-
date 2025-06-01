@@ -15,6 +15,7 @@ years = st.slider("Select years of historical data", min_value=1, max_value=10, 
 if st.button("Run Analysis"):
     with st.spinner("Fetching and analyzing stock data..."):
         # Update fetch with dynamic symbol + years
+        st.subheader(f"📈 {info.get('longName')} ({symbol})")
         df = fetch_stock_data(symbol=symbol, years_back=years)
         df = detect_anomalies(df)
 
