@@ -22,10 +22,7 @@ if st.button("Run Analysis"):
         company_name = info.get('longName') or "Company Name Not Found"
 
 # Show header
-        st.subheader(f"📈 {info.get('longName')} ({symbol})")
-
         st.subheader(f"📈 {company_name} ({symbol.upper()})")
-
         st.subheader("📊 Price & Anomaly Chart")
         plot_anomalies(df)
 
